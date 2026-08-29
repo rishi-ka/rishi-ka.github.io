@@ -1,633 +1,620 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2870
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\froman\fcharset0 Times-Roman;}
-{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
-{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww20240\viewh14420\viewkind0
-\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-\f0\fs24 \cf0 <!DOCTYPE html>\
-<html lang="en">\
-<head>\
-<meta charset="utf-8">\
-<meta name="viewport" content="width=device-width, initial-scale=1">\
-\
-<!-- ============================================================\
-     EDIT ME FIRST \'97 search for "EDIT:" to find every spot\
-     that needs your real details before you publish.\
-     ============================================================ -->\
-\
-<title>Rishika Aggarwal \'97 behavioural science &amp; impact</title>\
-<meta name="description" content=\'93\expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2 Psychology researcher, trained in how people perceive and decide, with two years inside a business. I work on environmental behaviour \'97 and on what survives contact with commercial reality.\'94\
-<sub-heading> I study the gap between intention and action: measuring it in the lab, testing it in sustainability and policy research, and living with it in the messy commercial reality where most decisions actually get made.\
-\pard\pardeftab720\sa240\partightenfactor0
+<!-- ============================================================
+     EDIT ME FIRST — search for "EDIT:" to find every spot
+     that needs your real details before you publish.
+     ============================================================ -->
 
-\f1 \cf0 \
-\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+<title>EDIT: Your Name — behavioural science &amp; impact</title>
+<meta name="description" content="EDIT: One line about you. This shows up in Google results and when someone pastes your link into Slack.">
 
-\f0 \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0  >\
-\
-<link rel="preconnect" href="https://fonts.googleapis.com">\
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">\
-\
-<style>\
-:root\{\
-  /* Vanilla Custard, lightened and pulled toward cream so a full page doesn't glare */\
-  --paper:#FBF6E8;\
-  /* Vanilla Custard as given \'97 panels and recessed surfaces */\
-  --paper-2:#FFF3B0;\
-  /* near-black derived from Black Cherry, keeps the warm cast */\
-  --ink:#2E1416;\
-  /* warm taupe between Black Cherry and Honey Bronze */\
-  --muted:#7A5340;\
-  /* hairline tinted from the vanilla */\
-  --rule:#E6DCC0;\
-\
-  --accent:#540B0E;    /* Black Cherry \'97 the "Both" state   */\
-  --accent-b:#9E2A2B;  /* Brown Red \'97 behavioural lens      */\
-  --accent-e:#335C67;  /* Dark Slate Grey \'97 impact lens     */\
-  --touch:#E09F3E;     /* Honey Bronze \'97 anything clickable */\
-\
-  --display:"Bricolage Grotesque", system-ui, sans-serif;\
-  --body:"Newsreader", Georgia, serif;\
-  --mono:"IBM Plex Mono", ui-monospace, monospace;\
-\
-  --gutter:clamp(1.25rem, 5vw, 5rem);\
-  --max:74rem;\
-\}\
-*\{box-sizing:border-box;\}\
-html\{-webkit-text-size-adjust:100%;scroll-behavior:smooth;\}\
-body\{\
-  margin:0;background:var(--paper);color:var(--ink);\
-  font-family:var(--body);font-weight:300;\
-  font-size:clamp(1.02rem,0.95rem + 0.3vw,1.16rem);line-height:1.55;\
-  -webkit-font-smoothing:antialiased;\
-\}\
-a\{color:inherit;\}\
-:focus-visible\{outline:2px solid var(--accent);outline-offset:3px;\}\
-.wrap\{max-width:var(--max);margin:0 auto;padding-inline:var(--gutter);\}\
-.mono\{font-family:var(--mono);font-size:0.72rem;letter-spacing:0.09em;text-transform:uppercase;font-weight:500;\}\
-.muted\{color:var(--muted);\}\
-\
-/* ============================================================\
-   THE LENS SWITCH \'97 pure CSS. Three radios sit at the top of\
-   <body>; every rule below reads their state through sibling\
-   selectors, so the page works with JavaScript switched off.\
-   ============================================================ */\
-.lens-input\{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;\}\
-\
-#lens-b:checked ~ header, #lens-b:checked ~ main, #lens-b:checked ~ footer\{--accent:var(--accent-b);\}\
-#lens-e:checked ~ header, #lens-e:checked ~ main, #lens-e:checked ~ footer\{--accent:var(--accent-e);\}\
-\
-/* which of the paired descriptions is visible */\
-#lens-b:checked ~ main .read--e,\
-#lens-e:checked ~ main .read--b\{display:none;\}\
-#lens-b:checked ~ main .reads,\
-#lens-e:checked ~ main .reads\{grid-template-columns:1fr;max-width:62ch;\}\
-\
-/* which hero sentence is visible */\
-.deck\{display:none;\}\
-#lens-x:checked ~ main .deck--x,\
-#lens-b:checked ~ main .deck--b,\
-#lens-e:checked ~ main .deck--e\{display:block;\}\
-\
-/* which button looks active */\
-#lens-x:checked ~ header label[for="lens-x"],\
-#lens-b:checked ~ header label[for="lens-b"],\
-#lens-e:checked ~ header label[for="lens-e"]\{background:var(--touch);color:var(--ink);\}\
-#lens-x:focus-visible ~ header label[for="lens-x"],\
-#lens-b:focus-visible ~ header label[for="lens-b"],\
-#lens-e:focus-visible ~ header label[for="lens-e"]\{outline:2px solid var(--accent);outline-offset:2px;\}\
-\
-/* the header scatterplot re-encodes itself */\
-#lens-b:checked ~ main .mark\{rx:1.5;opacity:0.9;\}\
-#lens-e:checked ~ main .mark\{rx:0;opacity:0.45;\}\
-#lens-x:checked ~ main .plot__caption b\{font-weight:400;\}\
-\
-/* ---------- top bar ---------- */\
-.bar\{position:sticky;top:0;z-index:20;background:color-mix(in srgb, var(--paper) 88%, transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--rule);\}\
-.bar__inner\{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-block:0.7rem;\}\
-.bar__name\{font-family:var(--mono);font-size:0.74rem;letter-spacing:0.1em;text-transform:uppercase;font-weight:500;text-decoration:none;\}\
-.bar__name b\{font-weight:500;color:var(--accent);transition:color .35s ease;\}\
-.lens\{display:flex;align-items:center;gap:0.55rem;\}\
-.lens__label\{display:none;\}\
-@media(min-width:900px)\{ .lens__label\{display:block;\} \}\
-.lens__group\{display:flex;border:1px solid var(--rule);background:var(--paper-2);border-radius:2px;overflow:hidden;\}\
-.lens__group label\{\
-  cursor:pointer;font-family:var(--mono);font-size:0.68rem;letter-spacing:0.07em;text-transform:uppercase;\
-  color:var(--muted);padding:0.42rem 0.7rem;transition:background .2s ease,color .2s ease;user-select:none;\
-\}\
-.lens__group label + label\{border-left:1px solid var(--rule);\}\
-.lens__group label:hover\{color:var(--ink);\}\
-\
-/* ---------- hero ---------- */\
-.hero\{padding-block:clamp(3rem,9vw,6.5rem) clamp(2.5rem,6vw,4.5rem);\}\
-.hero__grid\{display:grid;gap:clamp(2rem,5vw,3.5rem);align-items:center;\}\
-@media(min-width:900px)\{ .hero__grid\{grid-template-columns:1.15fr 0.85fr;\} \}\
-.hero h1\{font-family:var(--display);font-weight:700;font-size:clamp(2.7rem,1.6rem + 5.2vw,5.1rem);line-height:0.94;letter-spacing:-0.03em;margin:0.7rem 0 0;\}\
-.deck\{font-size:clamp(1.2rem,1.05rem + 0.7vw,1.62rem);line-height:1.35;max-width:32ch;margin:1.4rem 0 0;\}\
-.deck em\{font-style:italic;color:var(--accent);transition:color .35s ease;\}\
-.hero__links\{display:flex;flex-wrap:wrap;gap:0.35rem 1.4rem;margin-top:2rem;\}\
-.hero__links a\{text-decoration:none;border-bottom:1px solid var(--rule);padding-bottom:2px;\}\
-.hero__links a\{border-color:var(--touch);\}\
-.hero__links a:hover\{border-color:var(--accent);color:var(--accent);\}\
-\
-/* ---------- signature scatter ---------- */\
-.plot\{width:100%;max-width:26rem;margin-inline:auto;display:block;overflow:visible;\}\
-.plot__frame\{stroke:var(--rule);stroke-width:0.35;fill:none;\}\
-.plot__fit\{stroke:var(--accent);stroke-width:0.7;opacity:0.55;transition:stroke .35s ease;\}\
-.mark\{fill:var(--accent);rx:1.5;opacity:0.7;transition:opacity .5s ease, rx .5s ease, fill .35s ease;\}\
-.plot__caption\{margin-top:0.9rem;text-align:center;\}\
-\
-/* ---------- sections ---------- */\
-.section\{padding-block:clamp(2.75rem,6vw,4.75rem);border-top:1px solid var(--rule);\}\
-.section__head\{display:flex;align-items:baseline;gap:1rem;margin-bottom:2rem;\}\
-.section__head h2\{font-family:var(--display);font-weight:500;letter-spacing:-0.015em;font-size:clamp(1.35rem,1.2rem + 0.6vw,1.85rem);margin:0;\}\
-.section__head .mono\{color:var(--accent);transition:color .35s ease;\}\
-.note\{max-width:56ch;\}\
-.note p\{margin:0 0 0.9rem;\}\
-.note p:last-child\{margin-bottom:0;\}\
-\
-/* ---------- the correlation demo ---------- */\
-.demo\{display:grid;gap:2rem;align-items:start;\}\
-@media(min-width:860px)\{ .demo\{grid-template-columns:0.9fr 1.1fr;gap:3rem;\} \}\
-.demo__stage\{border:1px solid var(--rule);background:var(--paper-2);padding:1rem;\}\
-#demoPlot\{width:100%;height:auto;display:block;\}\
-.demo__pt\{fill:var(--accent);\}\
-.demo__controls\{display:flex;flex-direction:column;gap:1.1rem;\}\
-.slider-row\{display:flex;align-items:baseline;justify-content:space-between;gap:1rem;\}\
-.slider-val\{font-family:var(--mono);font-size:1.9rem;font-weight:500;color:var(--accent);line-height:1;\}\
-input[type=range]\{width:100%;accent-color:var(--touch);height:1.6rem;\}\
-.btn-row\{display:flex;gap:0.6rem;flex-wrap:wrap;\}\
-.btn\{\
-  font-family:var(--mono);font-size:0.7rem;letter-spacing:0.08em;text-transform:uppercase;\
-  padding:0.6rem 1.1rem;border:1px solid var(--touch);background:var(--touch);color:var(--ink);\
-  cursor:pointer;border-radius:2px;transition:background .2s ease,color .2s ease,border-color .2s ease;\
-\}\
-.btn:hover\{background:var(--accent);border-color:var(--accent);color:var(--paper);\}\
-.btn--ghost\{background:transparent;color:var(--accent);border-color:var(--rule);\}\
-.btn--ghost:hover\{background:var(--touch);border-color:var(--touch);color:var(--ink);\}\
-.verdict\{min-height:5.5rem;border-top:1px solid var(--rule);padding-top:0.8rem;\}\
-.verdict p\{margin:0.4rem 0 0;\}\
-.tally\{font-family:var(--mono);font-size:0.72rem;letter-spacing:0.06em;color:var(--muted);\}\
-.demo__fallback\{border:1px dashed var(--rule);padding:1rem;\}\
-\
-/* ---------- work ---------- */\
-.entry\{padding-block:1.9rem;border-top:1px solid var(--rule);\}\
-.entry:first-of-type\{border-top:0;padding-top:0;\}\
-.entry__meta\{display:flex;flex-wrap:wrap;gap:0.3rem 1rem;align-items:baseline;margin:0;\}\
-.entry h3\{font-family:var(--display);font-weight:700;letter-spacing:-0.015em;font-size:clamp(1.2rem,1.1rem + 0.5vw,1.5rem);margin:0.45rem 0 0;\}\
-.entry__org\{margin:0.15rem 0 0;font-style:italic;color:var(--muted);\}\
-.reads\{display:grid;gap:1.4rem;margin-top:1.1rem;\}\
-@media(min-width:820px)\{ .reads\{grid-template-columns:1fr 1fr;gap:2.5rem;\} \}\
-.read\{border-top:1px solid var(--rule);padding-top:0.7rem;\}\
-.read p\{margin:0.45rem 0 0;\}\
-.read__tag\{color:var(--muted);\}\
-.read--b .read__tag\{color:var(--accent-b);\}\
-.read--e .read__tag\{color:var(--accent-e);\}\
-\
-details.detail\{margin-top:1.1rem;border-top:1px solid var(--rule);\}\
-details.detail summary\{\
-  cursor:pointer;list-style:none;padding-top:0.7rem;\
-  font-family:var(--mono);font-size:0.7rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--accent);\
-\}\
-details.detail summary::-webkit-details-marker\{display:none;\}\
-details.detail summary::after\{content:" +";\}\
-details.detail[open] summary::after\{content:" \'96";\}\
-details.detail p\{margin:0.6rem 0 0.4rem;max-width:66ch;font-size:0.98rem;\}\
-\
-/* ---------- writing ---------- */\
-.cards\{display:grid;gap:1px;background:var(--rule);border:1px solid var(--rule);\}\
-@media(min-width:760px)\{ .cards\{grid-template-columns:repeat(3,1fr);\} \}\
-.card\{background:var(--paper);padding:1.4rem;display:flex;flex-direction:column;gap:0.6rem;text-decoration:none;transition:background .2s ease;\}\
-.card:hover\{background:var(--paper-2);\}\
-.card h3\{font-family:var(--display);font-weight:500;font-size:1.08rem;line-height:1.25;margin:0;\}\
-.card p\{margin:0;font-size:0.95rem;color:var(--muted);\}\
-.card__go\{margin-top:auto;color:var(--accent);transition:color .35s ease;\}\
-\
-/* ---------- lists ---------- */\
-.cols\{display:grid;gap:2rem;\}\
-@media(min-width:760px)\{ .cols\{grid-template-columns:repeat(2,1fr);gap:3rem;\} \}\
-@media(min-width:1040px)\{ .cols--3\{grid-template-columns:repeat(3,1fr);\} \}\
-.stack\{list-style:none;margin:0.8rem 0 0;padding:0;\}\
-.stack li\{padding:0.42rem 0;border-top:1px solid var(--rule);font-size:0.98rem;\}\
-.stack li:first-child\{border-top:0;\}\
-.stack b\{font-weight:400;font-style:italic;color:var(--muted);\}\
-\
-/* ---------- contact ---------- */\
-.contact__grid\{display:grid;gap:2rem;align-items:end;\}\
-@media(min-width:820px)\{ .contact__grid\{grid-template-columns:1.2fr 0.8fr;\} \}\
-.contact h2\{font-family:var(--display);font-weight:700;letter-spacing:-0.025em;font-size:clamp(1.9rem,1.4rem + 2.4vw,3.2rem);line-height:1;margin:0.6rem 0 0;\}\
-.contact__links\{display:flex;flex-direction:column;gap:0.5rem;\}\
-.contact__links a\{text-decoration:none;border-bottom:1px solid var(--rule);padding-bottom:3px;width:fit-content;\}\
-.contact__links a:hover\{border-color:var(--accent);color:var(--accent);\}\
-footer\{border-top:1px solid var(--rule);padding-block:1.6rem 2.6rem;\}\
-.footer__inner\{display:flex;flex-wrap:wrap;gap:0.6rem 1.5rem;justify-content:space-between;\}\
-\
-@media(prefers-reduced-motion:reduce)\{\
-  html\{scroll-behavior:auto;\}\
-  *\{transition-duration:0.01ms !important;animation-duration:0.01ms !important;\}\
-\}\
-</style>\
-</head>\
-<body>\
-\
-<!-- the three lens states. Order matters: every rule above reads them as siblings. -->\
-<input class="lens-input" type="radio" name="lens" id="lens-b">\
-<input class="lens-input" type="radio" name="lens" id="lens-x" checked>\
-<input class="lens-input" type="radio" name="lens" id="lens-e">\
-\
-<header class="bar">\
-  <div class="wrap bar__inner">\
-    <!-- EDIT: your name --> Rishika Aggarwal\
-    <a class="bar__name" href="#top">Your Name<b> \'b7</b> London</a>\
-    <div class="lens">\
-      <span class="lens__label mono muted">Read this page as</span>\
-      <div class="lens__group">\
-        <label for="lens-b">Behavioural</label>\
-        <label for="lens-x">Both</label>\
-        <label for="lens-e">Impact</label>\
-      </div>\
-    </div>\
-  </div>\
-</header>\
-\
-<main id="top">\
-\
-  <!-- ===================== HERO ===================== -->\
-  <section class="hero wrap">\
-    <div class="hero__grid">\
-      <div>\
-        <p class="mono muted">Behavioural science &amp; ESG \'b7 London</p>\
-        <!-- EDIT: your name --> Rishika Aggarwal\
-        <h1>Your<br>Name</h1>\
-\
-        <p class="deck deck--x">I study how people actually behave, then work out what that means for <em>environmental and investment decisions</em>.</p>\
-        <p class="deck deck--b">Mixed-methods researcher. I run <em>psychophysics experiments, surveys and interview studies</em>.</p>\
-        <p class="deck deck--e">Impact and ESG analyst. I do <em>sector diligence and sustainability strategy</em>, with the behavioural evidence behind it.</p>\
-\
-        <p class="hero__links mono">\
-          <!-- EDIT: all four links -->\
-          <a href="mailto:you@example.com">Email</a>\
-          <a href="https://linkedin.com/in/yourhandle">LinkedIn</a>\
-          <a href="cv.pdf">CV (PDF)</a>\
-          <a href="#demo">Try the experiment</a>\
-        </p>\
-      </div>\
-\
-      <figure style="margin:0">\
-        <svg class="plot" viewBox="0 0 100 100" role="img" aria-label="A scatterplot of thirty points with a fitted line. The marks change shape and opacity with the lens setting; the underlying relationship does not.">\
-          <path class="plot__frame" d="M4 96 H96 M4 96 V4"/>\
-          <line class="plot__fit" x1="4" y1="85.1" x2="96" y2="18.9"/>\
-          <g>\
-            <rect class="mark" x="4.5" y="80.5" width="3" height="3"/>\
-            <rect class="mark" x="8.5" y="89.5" width="3" height="3"/>\
-            <rect class="mark" x="11.5" y="67.5" width="3" height="3"/>\
-            <rect class="mark" x="14.5" y="76.5" width="3" height="3"/>\
-            <rect class="mark" x="17.5" y="58.5" width="3" height="3"/>\
-            <rect class="mark" x="20.5" y="83.5" width="3" height="3"/>\
-            <rect class="mark" x="23.5" y="63.5" width="3" height="3"/>\
-            <rect class="mark" x="26.5" y="49.5" width="3" height="3"/>\
-            <rect class="mark" x="29.5" y="70.5" width="3" height="3"/>\
-            <rect class="mark" x="32.5" y="54.5" width="3" height="3"/>\
-            <rect class="mark" x="35.5" y="40.5" width="3" height="3"/>\
-            <rect class="mark" x="38.5" y="65.5" width="3" height="3"/>\
-            <rect class="mark" x="41.5" y="46.5" width="3" height="3"/>\
-            <rect class="mark" x="44.5" y="32.5" width="3" height="3"/>\
-            <rect class="mark" x="47.5" y="57.5" width="3" height="3"/>\
-            <rect class="mark" x="50.5" y="41.5" width="3" height="3"/>\
-            <rect class="mark" x="53.5" y="26.5" width="3" height="3"/>\
-            <rect class="mark" x="56.5" y="50.5" width="3" height="3"/>\
-            <rect class="mark" x="59.5" y="35.5" width="3" height="3"/>\
-            <rect class="mark" x="62.5" y="20.5" width="3" height="3"/>\
-            <rect class="mark" x="65.5" y="43.5" width="3" height="3"/>\
-            <rect class="mark" x="68.5" y="29.5" width="3" height="3"/>\
-            <rect class="mark" x="71.5" y="14.5" width="3" height="3"/>\
-            <rect class="mark" x="74.5" y="38.5" width="3" height="3"/>\
-            <rect class="mark" x="77.5" y="24.5" width="3" height="3"/>\
-            <rect class="mark" x="80.5" y="9.5"  width="3" height="3"/>\
-            <rect class="mark" x="83.5" y="32.5" width="3" height="3"/>\
-            <rect class="mark" x="86.5" y="18.5" width="3" height="3"/>\
-            <rect class="mark" x="89.5" y="5.5"  width="3" height="3"/>\
-            <rect class="mark" x="92.5" y="27.5" width="3" height="3"/>\
-          </g>\
-        </svg>\
-        <figcaption class="plot__caption mono muted">Same relationship \'b7 <b>three encodings</b></figcaption>\
-      </figure>\
-    </div>\
-  </section>\
-\
-  <!-- ===================== HOW TO READ ===================== -->\
-  <section class="section wrap">\
-    <div class="section__head"><span class="mono">01</span><h2>How to read this page</h2></div>\
-    <div class="note">\
-      <p>My work splits across two fields that job adverts usually keep apart: behavioural research, and environmental and impact analysis. So this page describes the same projects twice.</p>\
-      <p>Use the switch at the top. The work is the same either way; only the description changes. My lab research asks a version of that question about charts, and you can try it below.</p>\
-    </div>\
-  </section>\
-\
-  <!-- ===================== INTERACTIVE DEMO ===================== -->\
-  <section class="section wrap" id="demo">\
-    <div class="section__head"><span class="mono">02</span><h2>Try the experiment</h2></div>\
-    <div class="demo">\
-      <div class="demo__stage">\
-        <svg id="demoPlot" viewBox="0 0 100 100" role="img" aria-label="A scatterplot. Estimate how strongly the two variables are related.">\
-          <path d="M4 96 H96 M4 96 V4" style="stroke:var(--rule);stroke-width:0.35;fill:none"/>\
-          <g id="demoPts"></g>\
-        </svg>\
-      </div>\
-\
-      <div class="demo__controls">\
-        <p class="note" style="margin:0">This is a cut-down version of the task I run at the UBC Visual Cognition Lab. Look at the plot and estimate how strongly the two variables move together, from 0 for no relationship to 1 for perfect. Most people are wrong in the same direction. That is the finding.</p>\
-\
-        <div>\
-          <div class="slider-row">\
-            <label class="mono" for="guess">Your estimate</label>\
-            <span class="slider-val" id="guessOut">0.50</span>\
-          </div>\
-          <input type="range" id="guess" min="0" max="1" step="0.01" value="0.5" aria-describedby="guessOut">\
-        </div>\
-\
-        <div class="btn-row">\
-          <button class="btn" id="check" type="button">Check my estimate</button>\
-          <button class="btn btn--ghost" id="again" type="button">New plot</button>\
-        </div>\
-\
-        <div class="verdict" id="verdict" aria-live="polite">\
-          <p class="tally">Round 1 \'97 no guesses yet</p>\
-          <p class="muted">The answer appears here once you commit to a number.</p>\
-        </div>\
-      </div>\
-    </div>\
-    <noscript>\
-      <p class="demo__fallback muted">This demo needs JavaScript. Everything else on the page works without it.</p>\
-    </noscript>\
-  </section>\
-\
-  <!-- ===================== WORK ===================== -->\
-  <section class="section wrap">\
-    <div class="section__head"><span class="mono">03</span><h2>Selected work</h2></div>\
-\
-    <article class="entry">\
-      <p class="entry__meta mono muted"><span>2025 \'96 2026</span><span>MSc dissertation \'b7 LSE</span></p>\
-      <h3>Sustainability on the Move</h3>\
-      <p class="entry__org">Pro-environmental practice and horizon security under chronic liminality \'b7 supervised by Dr Atrina Oraee</p>\
-      <div class="reads">\
-        <div class="read read--b">\
-          <p class="mono read__tag">Behavioural read</p>\
-          <p>Sequential mixed-methods study of international postgraduates who had moved home more than three times in three years: 65 eligible survey responses screened from 181, then 12 interviews analysed with reflexive thematic analysis. Built on the habit discontinuity hypothesis, social practice theory and Installation Theory.</p>\
-        </div>\
-        <div class="read read--e">\
-          <p class="mono read__tag">Impact read</p>\
-          <p>Explains why recycling, energy and food habits collapse in short-let and shared housing, even among people who care. Certainty about how long a home will last matters more than attitude does. That puts the problem with landlords, universities and housing providers, not with tenant education campaigns.</p>\
-        </div>\
-      </div>\
-      <details class="detail"><summary>The contribution</summary>\
-        <p>A dependency\'96horizon model: a 2\'d72 separating how far a practice depends on its physical setting from how certain a person is about that setting lasting. Horizon security splits into duration certainty (how long do I have) and succession certainty (do I know what comes next), and the two behave differently.</p>\
-      </details>\
-    </article>\
-\
-    <article class="entry">\
-      <p class="entry__meta mono muted"><span>Feb 2023 \'96 present</span><span>UBC Visual Cognition Lab</span></p>\
-      <h3>The Correlation Project</h3>\
-      <p class="entry__org">Advisor since Jan 2026; previously Project Leader, Secondary Project Leader and Co-Pilot \'b7 PI Dr Ronald Rensink</p>\
-      <div class="reads">\
-        <div class="read read--b">\
-          <p class="mono read__tag">Behavioural read</p>\
-          <p>Psychophysics of how precisely and accurately people perceive correlation in scatterplots, using just-noticeable-difference discrimination and direct estimation. My own COGS 402 study tested whether those judgements hold up when mark shape and opacity change.</p>\
-        </div>\
-        <div class="read read--e">\
-          <p class="mono read__tag">Impact read</p>\
-          <p>Impact and ESG reporting assumes the reader takes the right relationship out of a chart. This work measures how far that holds when the design changes. It also gave me four years of running a research programme and then handing it over.</p>\
-        </div>\
-      </div>\
-      <details class="detail"><summary>How it ran</summary>\
-        <p>Experiments run on a locally hosted Node.js application, extending the lab's existing JavaScript codebase. Analysis in Excel using Spearman and Pearson correlation with sensitivity checks. I recruited, onboarded and trained each intake of Co-Pilots, and now advise the project rather than lead it.</p>\
-      </details>\
-    </article>\
-\
-    <article class="entry">\
-      <p class="entry__meta mono muted"><span>Feb 2026</span><span>LSE Specialist Projects: Sustainability</span></p>\
-      <h3>Scalability diligence for EWCPA</h3>\
-      <p class="entry__org">Student consultant to a Kenya-based environmental NGO</p>\
-      <div class="reads">\
-        <div class="read read--b">\
-          <p class="mono read__tag">Behavioural read</p>\
-          <p>Worked out which parts of the programme depended on particular people and local knowledge, and which could be written down and repeated somewhere else.</p>\
-        </div>\
-        <div class="read read--e">\
-          <p class="mono read__tag">Impact read</p>\
-          <p>Sector analysis and scalability due diligence: mapped the operating landscape, tested the assumptions behind the growth case, and set out what would have to be true for the model to hold at a larger size and with external funding.</p>\
-        </div>\
-      </div>\
-    </article>\
-\
-    <article class="entry">\
-      <p class="entry__meta mono muted"><span>2023 \'96 2025</span><span>Gaurav Impex, Mumbai</span></p>\
-      <h3>Procurement and operations</h3>\
-      <p class="entry__org">Silicone and rubber raw materials \'b7 distributor for DJ Silicone, plus EPDM and neoprene grades</p>\
-      <div class="reads">\
-        <div class="read read--b">\
-          <p class="mono read__tag">Behavioural read</p>\
-          <p>Rebuilt how the business talks to its customers: a Zoho CRM setup with a custom Trials module tracking material samples through to decision, and a branded email template system sent from the CRM. I still maintain both. Two years of watching what buyers respond to is a good corrective to lab findings.</p>\
-        </div>\
-        <div class="read read--e">\
-          <p class="mono read__tag">Impact read</p>\
-          <p>Two years inside a materials supply chain: sourcing, supplier terms, pricing and stock across silicone, EPDM and neoprene grades. Sustainability analysis of manufacturing inputs reads differently once you have done the procurement yourself and know where the costs sit.</p>\
-        </div>\
-      </div>\
-    </article>\
-\
-    <p class="mono muted" style="margin-top:2rem">\
-      <!-- EDIT: trim or extend -->\
-      Earlier: tutor, The C.O.D.E. Initiative \'b7 content writer, TeenBook India\
-    </p>\
-  </section>\
-\
-  <!-- ===================== WRITING ===================== -->\
-  <section class="section wrap" id="writing">\
-    <div class="section__head"><span class="mono">04</span><h2>Writing</h2></div>\
-    <div class="cards">\
-      <!-- EDIT: replace href="#" with real PDF links once the files are uploaded -->\
-      <a class="card" href="#">\
-        <p class="mono muted">Dissertation \'b7 2026</p>\
-        <h3>Sustainability on the Move</h3>\
-        <p>~10,000 words on pro-environmental practice under repeated relocation, and the model it produced.</p>\
-        <span class="card__go mono">Read the PDF \uc0\u8594 </span>\
-      </a>\
-      <a class="card" href="#">\
-        <p class="mono muted">Research report \'b7 2023</p>\
-        <h3>Shape, opacity and correlation perception</h3>\
-        <p>My COGS 402 study: does the accuracy of a correlation judgement survive a change of visual encoding?</p>\
-        <span class="card__go mono">Read the PDF \uc0\u8594 </span>\
-      </a>\
-      <a class="card" href="#">\
-        <p class="mono muted">EDIT: add a third</p>\
-        <h3>A short piece for non-specialists</h3>\
-        <p>One page translating your research for someone with no background in it. Recruiters open this one first.</p>\
-        <span class="card__go mono">Read the PDF \uc0\u8594 </span>\
-      </a>\
-    </div>\
-  </section>\
-\
-  <!-- ===================== METHODS ===================== -->\
-  <section class="section wrap">\
-    <div class="section__head"><span class="mono">05</span><h2>Methods and tools</h2></div>\
-    <div class="cols cols--3">\
-      <div>\
-        <p class="mono">Methods I have run</p>\
-        <ul class="stack">\
-          <li>Sequential mixed-methods design</li>\
-          <li>Experimental and survey design</li>\
-          <li>Psychophysics \'97 JND discrimination, direct estimation</li>\
-          <li>Reflexive thematic analysis</li>\
-          <li>Spearman and Pearson correlation</li>\
-          <li>McNemar exact tests</li>\
-          <li>Sensitivity and robustness analysis</li>\
-        </ul>\
-      </div>\
-      <div>\
-        <p class="mono">Tools</p>\
-        <ul class="stack">\
-          <li>Advanced Excel <b>\'97 regression, pivots, lookups</b></li>\
-          <li>Qualtrics</li>\
-          <li>SPSS</li>\
-          <li>JavaScript <b>\'97 experiment codebases</b></li>\
-          <li>Zoho CRM, Freshsales</li>\
-        </ul>\
-        <p class="mono" style="margin-top:1.6rem">Languages</p>\
-        <ul class="stack">\
-          <li>English, Hindi, Marathi <b>\'97 fluent</b></li>\
-          <li>Spanish <b>\'97 B1</b></li>\
-        </ul>\
-      </div>\
-      <div>\
-        <p class="mono">Education and credentials</p>\
-        <ul class="stack">\
-          <li>MSc Societal and Environmental Psychology, LSE <b>\'97 2026</b></li>\
-          <li>BA Cognitive Systems (Cognition and Brain), UBC <b>\'97 2023</b></li>\
-          <li>CFA Level 1 candidate <b>\'97 sitting Feb 2027</b></li>\
-          <li>Bloomberg Market Concepts; Finance Fundamentals</li>\
-          <li>BCG Climate &amp; Sustainability simulation, Forage</li>\
-          <li>Behavioural Insights for Public Policy</li>\
-          <li>Foundations of Positive Psychology, UPenn</li>\
-        </ul>\
-      </div>\
-    </div>\
-  </section>\
-\
-  <!-- ===================== CONTACT ===================== -->\
-  <section class="section wrap contact">\
-    <div class="contact__grid">\
-      <div>\
-        <p class="mono muted">Currently</p>\
-        <h2>Looking for research and impact roles in London.</h2>\
-      </div>\
-      <div class="contact__links mono">\
-        <a href="mailto:you@example.com">rishikaaggarwal2@gmail.com</a>\
-        <a href="https://linkedin.com/in/yourhandle">https://www.linkedin.com/in/rishika-aggarwal/</a>\
-        <a href="cv.pdf">Download CV (PDF)</a>\
-        <a href="https://osf.io/">\
-      </div>\
-    </div>\
-  </section>\
-</main>\
-\
-<footer>\
-  <div class="wrap footer__inner mono muted">\
-    <!-- EDIT: keep, change or cut \'97 it's the only informal line here, which is why it works -->\
-    <span>Off the clock: badminton, banana bread, one hard thing a day.</span>\
-    <span>Made by me \'b7 2026</span>\
-  </div>\
-</footer>\
-\
-<script>\
-(function()\{\
-  var NS = 'http://www.w3.org/2000/svg';\
-  var ptsG = document.getElementById('demoPts');\
-  var slider = document.getElementById('guess');\
-  var out = document.getElementById('guessOut');\
-  var verdict = document.getElementById('verdict');\
-  var checkBtn = document.getElementById('check');\
-  var againBtn = document.getElementById('again');\
-  if(!ptsG || !slider) return;\
-\
-  var trueR = 0, round = 1, errors = [], answered = false;\
-\
-  function gauss()\{\
-    var u = 0, v = 0;\
-    while(u === 0) u = Math.random();\
-    while(v === 0) v = Math.random();\
-    return Math.sqrt(-2 * Math.log(u)) * Math.cos(2 * Math.PI * v);\
-  \}\
-\
-  function draw()\{\
-    trueR = 0.2 + Math.random() * 0.75;      // keep it in a range worth judging\
-    if(trueR > 0.95) trueR = 0.95;\
-    var n = 60, xs = [], ys = [];\
-    for(var i = 0; i < n; i++)\{\
-      var x = gauss(), z = gauss();\
-      xs.push(x);\
-      ys.push(trueR * x + Math.sqrt(1 - trueR * trueR) * z);\
-    \}\
-    var pad = 9;\
-    function scale(arr)\{\
-      var lo = Math.min.apply(null, arr), hi = Math.max.apply(null, arr);\
-      return arr.map(function(v)\{ return pad + (v - lo) / (hi - lo) * (100 - 2 * pad); \});\
-    \}\
-    var sx = scale(xs), sy = scale(ys);\
-    while(ptsG.firstChild) ptsG.removeChild(ptsG.firstChild);\
-    for(var j = 0; j < n; j++)\{\
-      var c = document.createElementNS(NS, 'circle');\
-      c.setAttribute('cx', sx[j].toFixed(2));\
-      c.setAttribute('cy', (100 - sy[j]).toFixed(2));\
-      c.setAttribute('r', 1.4);\
-      c.setAttribute('class', 'demo__pt');\
-      c.setAttribute('opacity', '0.75');\
-      ptsG.appendChild(c);\
-    \}\
-    answered = false;\
-  \}\
-\
-  function say(html)\{ verdict.innerHTML = html; \}\
-\
-  function tally()\{\
-    if(!errors.length) return 'Round ' + round + ' \'97 no guesses yet';\
-    var mean = errors.reduce(function(a, b)\{ return a + b; \}, 0) / errors.length;\
-    return 'Round ' + round + ' \'b7 ' + errors.length + ' judged \'b7 average error ' + mean.toFixed(2);\
-  \}\
-\
-  slider.addEventListener('input', function()\{\
-    out.textContent = Number(slider.value).toFixed(2);\
-  \});\
-\
-  checkBtn.addEventListener('click', function()\{\
-    if(answered) return;\
-    var guess = Number(slider.value);\
-    var err = Math.abs(guess - trueR);\
-    var signed = guess - trueR;\
-    errors.push(err);\
-    answered = true;\
-    var line = signed < -0.05\
-      ? 'You underestimated it. Almost everyone does: perceived correlation grows more slowly than the real thing.'\
-      : signed > 0.05\
-        ? 'You overestimated this one. That is less common, and usually means the cloud looked tighter than it was.'\
-        : 'Close. Better than most first attempts.';\
-    say('<p class="tally">' + tally() + '</p>' +\
-        '<p><strong>The real value was ' + trueR.toFixed(2) + '.</strong> You said ' + guess.toFixed(2) + '.</p>' +\
-        '<p class="muted">' + line + '</p>');\
-  \});\
-\
-  againBtn.addEventListener('click', function()\{\
-    round++;\
-    draw();\
-    say('<p class="tally">' + tally() + '</p><p class="muted">New plot. Commit to a number before you check.</p>');\
-  \});\
-\
-  draw();\
-  out.textContent = Number(slider.value).toFixed(2);\
-\})();\
-</script>\
-</body>\
-</html>}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  /* Vanilla Custard, lightened and pulled toward cream so a full page doesn't glare */
+  --paper:#FBF6E8;
+  /* Vanilla Custard as given — panels and recessed surfaces */
+  --paper-2:#FFF3B0;
+  /* near-black derived from Black Cherry, keeps the warm cast */
+  --ink:#2E1416;
+  /* warm taupe between Black Cherry and Honey Bronze */
+  --muted:#7A5340;
+  /* hairline tinted from the vanilla */
+  --rule:#E6DCC0;
+
+  --accent:#540B0E;    /* Black Cherry — the "Both" state   */
+  --accent-b:#9E2A2B;  /* Brown Red — behavioural lens      */
+  --accent-e:#335C67;  /* Dark Slate Grey — impact lens     */
+  --touch:#E09F3E;     /* Honey Bronze — anything clickable */
+
+  --display:"Bricolage Grotesque", system-ui, sans-serif;
+  --body:"Newsreader", Georgia, serif;
+  --mono:"IBM Plex Mono", ui-monospace, monospace;
+
+  --gutter:clamp(1.25rem, 5vw, 5rem);
+  --max:74rem;
+}
+*{box-sizing:border-box;}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:var(--body);font-weight:300;
+  font-size:clamp(1.02rem,0.95rem + 0.3vw,1.16rem);line-height:1.55;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit;}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;}
+.wrap{max-width:var(--max);margin:0 auto;padding-inline:var(--gutter);}
+.mono{font-family:var(--mono);font-size:0.72rem;letter-spacing:0.09em;text-transform:uppercase;font-weight:500;}
+.muted{color:var(--muted);}
+
+/* ============================================================
+   THE LENS SWITCH — pure CSS. Three radios sit at the top of
+   <body>; every rule below reads their state through sibling
+   selectors, so the page works with JavaScript switched off.
+   ============================================================ */
+.lens-input{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;}
+
+#lens-b:checked ~ header, #lens-b:checked ~ main, #lens-b:checked ~ footer{--accent:var(--accent-b);}
+#lens-e:checked ~ header, #lens-e:checked ~ main, #lens-e:checked ~ footer{--accent:var(--accent-e);}
+
+/* which of the paired descriptions is visible */
+#lens-b:checked ~ main .read--e,
+#lens-e:checked ~ main .read--b{display:none;}
+#lens-b:checked ~ main .reads,
+#lens-e:checked ~ main .reads{grid-template-columns:1fr;max-width:62ch;}
+
+/* which hero sentence is visible */
+.deck{display:none;}
+#lens-x:checked ~ main .deck--x,
+#lens-b:checked ~ main .deck--b,
+#lens-e:checked ~ main .deck--e{display:block;}
+
+/* which button looks active */
+#lens-x:checked ~ header label[for="lens-x"],
+#lens-b:checked ~ header label[for="lens-b"],
+#lens-e:checked ~ header label[for="lens-e"]{background:var(--touch);color:var(--ink);}
+#lens-x:focus-visible ~ header label[for="lens-x"],
+#lens-b:focus-visible ~ header label[for="lens-b"],
+#lens-e:focus-visible ~ header label[for="lens-e"]{outline:2px solid var(--accent);outline-offset:2px;}
+
+/* the header scatterplot re-encodes itself */
+#lens-b:checked ~ main .mark{rx:1.5;opacity:0.9;}
+#lens-e:checked ~ main .mark{rx:0;opacity:0.45;}
+#lens-x:checked ~ main .plot__caption b{font-weight:400;}
+
+/* ---------- top bar ---------- */
+.bar{position:sticky;top:0;z-index:20;background:color-mix(in srgb, var(--paper) 88%, transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--rule);}
+.bar__inner{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-block:0.7rem;}
+.bar__name{font-family:var(--mono);font-size:0.74rem;letter-spacing:0.1em;text-transform:uppercase;font-weight:500;text-decoration:none;}
+.bar__name b{font-weight:500;color:var(--accent);transition:color .35s ease;}
+.lens{display:flex;align-items:center;gap:0.55rem;}
+.lens__label{display:none;}
+@media(min-width:900px){ .lens__label{display:block;} }
+.lens__group{display:flex;border:1px solid var(--rule);background:var(--paper-2);border-radius:2px;overflow:hidden;}
+.lens__group label{
+  cursor:pointer;font-family:var(--mono);font-size:0.68rem;letter-spacing:0.07em;text-transform:uppercase;
+  color:var(--muted);padding:0.42rem 0.7rem;transition:background .2s ease,color .2s ease;user-select:none;
+}
+.lens__group label + label{border-left:1px solid var(--rule);}
+.lens__group label:hover{color:var(--ink);}
+
+/* ---------- hero ---------- */
+.hero{padding-block:clamp(3rem,9vw,6.5rem) clamp(2.5rem,6vw,4.5rem);}
+.hero__grid{display:grid;gap:clamp(2rem,5vw,3.5rem);align-items:center;}
+@media(min-width:900px){ .hero__grid{grid-template-columns:1.15fr 0.85fr;} }
+.hero h1{font-family:var(--display);font-weight:700;font-size:clamp(2.7rem,1.6rem + 5.2vw,5.1rem);line-height:0.94;letter-spacing:-0.03em;margin:0.7rem 0 0;}
+.deck{font-size:clamp(1.2rem,1.05rem + 0.7vw,1.62rem);line-height:1.35;max-width:32ch;margin:1.4rem 0 0;}
+.deck em{font-style:italic;color:var(--accent);transition:color .35s ease;}
+.hero__links{display:flex;flex-wrap:wrap;gap:0.35rem 1.4rem;margin-top:2rem;}
+.hero__links a{text-decoration:none;border-bottom:1px solid var(--rule);padding-bottom:2px;}
+.hero__links a{border-color:var(--touch);}
+.hero__links a:hover{border-color:var(--accent);color:var(--accent);}
+
+/* ---------- signature scatter ---------- */
+.plot{width:100%;max-width:26rem;margin-inline:auto;display:block;overflow:visible;}
+.plot__frame{stroke:var(--rule);stroke-width:0.35;fill:none;}
+.plot__fit{stroke:var(--accent);stroke-width:0.7;opacity:0.55;transition:stroke .35s ease;}
+.mark{fill:var(--accent);rx:1.5;opacity:0.7;transition:opacity .5s ease, rx .5s ease, fill .35s ease;}
+.plot__caption{margin-top:0.9rem;text-align:center;}
+
+/* ---------- sections ---------- */
+.section{padding-block:clamp(2.75rem,6vw,4.75rem);border-top:1px solid var(--rule);}
+.section__head{display:flex;align-items:baseline;gap:1rem;margin-bottom:2rem;}
+.section__head h2{font-family:var(--display);font-weight:500;letter-spacing:-0.015em;font-size:clamp(1.35rem,1.2rem + 0.6vw,1.85rem);margin:0;}
+.section__head .mono{color:var(--accent);transition:color .35s ease;}
+.note{max-width:56ch;}
+.note p{margin:0 0 0.9rem;}
+.note p:last-child{margin-bottom:0;}
+
+/* ---------- the correlation demo ---------- */
+.demo{display:grid;gap:2rem;align-items:start;}
+@media(min-width:860px){ .demo{grid-template-columns:0.9fr 1.1fr;gap:3rem;} }
+.demo__stage{border:1px solid var(--rule);background:var(--paper-2);padding:1rem;}
+#demoPlot{width:100%;height:auto;display:block;}
+.demo__pt{fill:var(--accent);}
+.demo__controls{display:flex;flex-direction:column;gap:1.1rem;}
+.slider-row{display:flex;align-items:baseline;justify-content:space-between;gap:1rem;}
+.slider-val{font-family:var(--mono);font-size:1.9rem;font-weight:500;color:var(--accent);line-height:1;}
+input[type=range]{width:100%;accent-color:var(--touch);height:1.6rem;}
+.btn-row{display:flex;gap:0.6rem;flex-wrap:wrap;}
+.btn{
+  font-family:var(--mono);font-size:0.7rem;letter-spacing:0.08em;text-transform:uppercase;
+  padding:0.6rem 1.1rem;border:1px solid var(--touch);background:var(--touch);color:var(--ink);
+  cursor:pointer;border-radius:2px;transition:background .2s ease,color .2s ease,border-color .2s ease;
+}
+.btn:hover{background:var(--accent);border-color:var(--accent);color:var(--paper);}
+.btn--ghost{background:transparent;color:var(--accent);border-color:var(--rule);}
+.btn--ghost:hover{background:var(--touch);border-color:var(--touch);color:var(--ink);}
+.verdict{min-height:5.5rem;border-top:1px solid var(--rule);padding-top:0.8rem;}
+.verdict p{margin:0.4rem 0 0;}
+.tally{font-family:var(--mono);font-size:0.72rem;letter-spacing:0.06em;color:var(--muted);}
+.demo__fallback{border:1px dashed var(--rule);padding:1rem;}
+
+/* ---------- work ---------- */
+.entry{padding-block:1.9rem;border-top:1px solid var(--rule);}
+.entry:first-of-type{border-top:0;padding-top:0;}
+.entry__meta{display:flex;flex-wrap:wrap;gap:0.3rem 1rem;align-items:baseline;margin:0;}
+.entry h3{font-family:var(--display);font-weight:700;letter-spacing:-0.015em;font-size:clamp(1.2rem,1.1rem + 0.5vw,1.5rem);margin:0.45rem 0 0;}
+.entry__org{margin:0.15rem 0 0;font-style:italic;color:var(--muted);}
+.reads{display:grid;gap:1.4rem;margin-top:1.1rem;}
+@media(min-width:820px){ .reads{grid-template-columns:1fr 1fr;gap:2.5rem;} }
+.read{border-top:1px solid var(--rule);padding-top:0.7rem;}
+.read p{margin:0.45rem 0 0;}
+.read__tag{color:var(--muted);}
+.read--b .read__tag{color:var(--accent-b);}
+.read--e .read__tag{color:var(--accent-e);}
+
+details.detail{margin-top:1.1rem;border-top:1px solid var(--rule);}
+details.detail summary{
+  cursor:pointer;list-style:none;padding-top:0.7rem;
+  font-family:var(--mono);font-size:0.7rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--accent);
+}
+details.detail summary::-webkit-details-marker{display:none;}
+details.detail summary::after{content:" +";}
+details.detail[open] summary::after{content:" –";}
+details.detail p{margin:0.6rem 0 0.4rem;max-width:66ch;font-size:0.98rem;}
+
+/* ---------- writing ---------- */
+.cards{display:grid;gap:1px;background:var(--rule);border:1px solid var(--rule);}
+@media(min-width:760px){ .cards{grid-template-columns:repeat(3,1fr);} }
+.card{background:var(--paper);padding:1.4rem;display:flex;flex-direction:column;gap:0.6rem;text-decoration:none;transition:background .2s ease;}
+.card:hover{background:var(--paper-2);}
+.card h3{font-family:var(--display);font-weight:500;font-size:1.08rem;line-height:1.25;margin:0;}
+.card p{margin:0;font-size:0.95rem;color:var(--muted);}
+.card__go{margin-top:auto;color:var(--accent);transition:color .35s ease;}
+
+/* ---------- lists ---------- */
+.cols{display:grid;gap:2rem;}
+@media(min-width:760px){ .cols{grid-template-columns:repeat(2,1fr);gap:3rem;} }
+@media(min-width:1040px){ .cols--3{grid-template-columns:repeat(3,1fr);} }
+.stack{list-style:none;margin:0.8rem 0 0;padding:0;}
+.stack li{padding:0.42rem 0;border-top:1px solid var(--rule);font-size:0.98rem;}
+.stack li:first-child{border-top:0;}
+.stack b{font-weight:400;font-style:italic;color:var(--muted);}
+
+/* ---------- contact ---------- */
+.contact__grid{display:grid;gap:2rem;align-items:end;}
+@media(min-width:820px){ .contact__grid{grid-template-columns:1.2fr 0.8fr;} }
+.contact h2{font-family:var(--display);font-weight:700;letter-spacing:-0.025em;font-size:clamp(1.9rem,1.4rem + 2.4vw,3.2rem);line-height:1;margin:0.6rem 0 0;}
+.contact__links{display:flex;flex-direction:column;gap:0.5rem;}
+.contact__links a{text-decoration:none;border-bottom:1px solid var(--rule);padding-bottom:3px;width:fit-content;}
+.contact__links a:hover{border-color:var(--accent);color:var(--accent);}
+footer{border-top:1px solid var(--rule);padding-block:1.6rem 2.6rem;}
+.footer__inner{display:flex;flex-wrap:wrap;gap:0.6rem 1.5rem;justify-content:space-between;}
+
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto;}
+  *{transition-duration:0.01ms !important;animation-duration:0.01ms !important;}
+}
+</style>
+</head>
+<body>
+
+<!-- the three lens states. Order matters: every rule above reads them as siblings. -->
+<input class="lens-input" type="radio" name="lens" id="lens-b">
+<input class="lens-input" type="radio" name="lens" id="lens-x" checked>
+<input class="lens-input" type="radio" name="lens" id="lens-e">
+
+<header class="bar">
+  <div class="wrap bar__inner">
+    <!-- EDIT: your name -->
+    <a class="bar__name" href="#top">Your Name<b> ·</b> London</a>
+    <div class="lens">
+      <span class="lens__label mono muted">Read this page as</span>
+      <div class="lens__group">
+        <label for="lens-b">Behavioural</label>
+        <label for="lens-x">Both</label>
+        <label for="lens-e">Impact</label>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero wrap">
+    <div class="hero__grid">
+      <div>
+        <p class="mono muted">Behavioural science &amp; ESG · London</p>
+        <!-- EDIT: your name -->
+        <h1>Your<br>Name</h1>
+
+        <p class="deck deck--x">I study how people actually behave, then work out what that means for <em>environmental and investment decisions</em>.</p>
+        <p class="deck deck--b">Mixed-methods researcher. I run <em>psychophysics experiments, surveys and interview studies</em>.</p>
+        <p class="deck deck--e">Impact and ESG analyst. I do <em>sector diligence and sustainability strategy</em>, with the behavioural evidence behind it.</p>
+
+        <p class="hero__links mono">
+          <!-- EDIT: all four links -->
+          <a href="mailto:you@example.com">Email</a>
+          <a href="https://linkedin.com/in/yourhandle">LinkedIn</a>
+          <a href="cv.pdf">CV (PDF)</a>
+          <a href="#demo">Try the experiment</a>
+        </p>
+      </div>
+
+      <figure style="margin:0">
+        <svg class="plot" viewBox="0 0 100 100" role="img" aria-label="A scatterplot of thirty points with a fitted line. The marks change shape and opacity with the lens setting; the underlying relationship does not.">
+          <path class="plot__frame" d="M4 96 H96 M4 96 V4"/>
+          <line class="plot__fit" x1="4" y1="85.1" x2="96" y2="18.9"/>
+          <g>
+            <rect class="mark" x="4.5" y="80.5" width="3" height="3"/>
+            <rect class="mark" x="8.5" y="89.5" width="3" height="3"/>
+            <rect class="mark" x="11.5" y="67.5" width="3" height="3"/>
+            <rect class="mark" x="14.5" y="76.5" width="3" height="3"/>
+            <rect class="mark" x="17.5" y="58.5" width="3" height="3"/>
+            <rect class="mark" x="20.5" y="83.5" width="3" height="3"/>
+            <rect class="mark" x="23.5" y="63.5" width="3" height="3"/>
+            <rect class="mark" x="26.5" y="49.5" width="3" height="3"/>
+            <rect class="mark" x="29.5" y="70.5" width="3" height="3"/>
+            <rect class="mark" x="32.5" y="54.5" width="3" height="3"/>
+            <rect class="mark" x="35.5" y="40.5" width="3" height="3"/>
+            <rect class="mark" x="38.5" y="65.5" width="3" height="3"/>
+            <rect class="mark" x="41.5" y="46.5" width="3" height="3"/>
+            <rect class="mark" x="44.5" y="32.5" width="3" height="3"/>
+            <rect class="mark" x="47.5" y="57.5" width="3" height="3"/>
+            <rect class="mark" x="50.5" y="41.5" width="3" height="3"/>
+            <rect class="mark" x="53.5" y="26.5" width="3" height="3"/>
+            <rect class="mark" x="56.5" y="50.5" width="3" height="3"/>
+            <rect class="mark" x="59.5" y="35.5" width="3" height="3"/>
+            <rect class="mark" x="62.5" y="20.5" width="3" height="3"/>
+            <rect class="mark" x="65.5" y="43.5" width="3" height="3"/>
+            <rect class="mark" x="68.5" y="29.5" width="3" height="3"/>
+            <rect class="mark" x="71.5" y="14.5" width="3" height="3"/>
+            <rect class="mark" x="74.5" y="38.5" width="3" height="3"/>
+            <rect class="mark" x="77.5" y="24.5" width="3" height="3"/>
+            <rect class="mark" x="80.5" y="9.5"  width="3" height="3"/>
+            <rect class="mark" x="83.5" y="32.5" width="3" height="3"/>
+            <rect class="mark" x="86.5" y="18.5" width="3" height="3"/>
+            <rect class="mark" x="89.5" y="5.5"  width="3" height="3"/>
+            <rect class="mark" x="92.5" y="27.5" width="3" height="3"/>
+          </g>
+        </svg>
+        <figcaption class="plot__caption mono muted">Same relationship · <b>three encodings</b></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ===================== HOW TO READ ===================== -->
+  <section class="section wrap">
+    <div class="section__head"><span class="mono">01</span><h2>How to read this page</h2></div>
+    <div class="note">
+      <p>My work splits across two fields that job adverts usually keep apart: behavioural research, and environmental and impact analysis. So this page describes the same projects twice.</p>
+      <p>Use the switch at the top. The work is the same either way; only the description changes. My lab research asks a version of that question about charts, and you can try it below.</p>
+    </div>
+  </section>
+
+  <!-- ===================== INTERACTIVE DEMO ===================== -->
+  <section class="section wrap" id="demo">
+    <div class="section__head"><span class="mono">02</span><h2>Try the experiment</h2></div>
+    <div class="demo">
+      <div class="demo__stage">
+        <svg id="demoPlot" viewBox="0 0 100 100" role="img" aria-label="A scatterplot. Estimate how strongly the two variables are related.">
+          <path d="M4 96 H96 M4 96 V4" style="stroke:var(--rule);stroke-width:0.35;fill:none"/>
+          <g id="demoPts"></g>
+        </svg>
+      </div>
+
+      <div class="demo__controls">
+        <p class="note" style="margin:0">This is a cut-down version of the task I run at the UBC Visual Cognition Lab. Look at the plot and estimate how strongly the two variables move together, from 0 for no relationship to 1 for perfect. Most people are wrong in the same direction. That is the finding.</p>
+
+        <div>
+          <div class="slider-row">
+            <label class="mono" for="guess">Your estimate</label>
+            <span class="slider-val" id="guessOut">0.50</span>
+          </div>
+          <input type="range" id="guess" min="0" max="1" step="0.01" value="0.5" aria-describedby="guessOut">
+        </div>
+
+        <div class="btn-row">
+          <button class="btn" id="check" type="button">Check my estimate</button>
+          <button class="btn btn--ghost" id="again" type="button">New plot</button>
+        </div>
+
+        <div class="verdict" id="verdict" aria-live="polite">
+          <p class="tally">Round 1 — no guesses yet</p>
+          <p class="muted">The answer appears here once you commit to a number.</p>
+        </div>
+      </div>
+    </div>
+    <noscript>
+      <p class="demo__fallback muted">This demo needs JavaScript. Everything else on the page works without it.</p>
+    </noscript>
+  </section>
+
+  <!-- ===================== WORK ===================== -->
+  <section class="section wrap">
+    <div class="section__head"><span class="mono">03</span><h2>Selected work</h2></div>
+
+    <article class="entry">
+      <p class="entry__meta mono muted"><span>2025 – 2026</span><span>MSc dissertation · LSE</span></p>
+      <h3>Sustainability on the Move</h3>
+      <p class="entry__org">Pro-environmental practice and horizon security under chronic liminality · supervised by Dr Atrina Oraee</p>
+      <div class="reads">
+        <div class="read read--b">
+          <p class="mono read__tag">Behavioural read</p>
+          <p>Sequential mixed-methods study of international postgraduates who had moved home more than three times in three years: 65 eligible survey responses screened from 181, then 12 interviews analysed with reflexive thematic analysis. Built on the habit discontinuity hypothesis, social practice theory and Installation Theory.</p>
+        </div>
+        <div class="read read--e">
+          <p class="mono read__tag">Impact read</p>
+          <p>Explains why recycling, energy and food habits collapse in short-let and shared housing, even among people who care. Certainty about how long a home will last matters more than attitude does. That puts the problem with landlords, universities and housing providers, not with tenant education campaigns.</p>
+        </div>
+      </div>
+      <details class="detail"><summary>The contribution</summary>
+        <p>A dependency–horizon model: a 2×2 separating how far a practice depends on its physical setting from how certain a person is about that setting lasting. Horizon security splits into duration certainty (how long do I have) and succession certainty (do I know what comes next), and the two behave differently.</p>
+      </details>
+    </article>
+
+    <article class="entry">
+      <p class="entry__meta mono muted"><span>Feb 2023 – present</span><span>UBC Visual Cognition Lab</span></p>
+      <h3>The Correlation Project</h3>
+      <p class="entry__org">Advisor since Jan 2026; previously Project Leader, Secondary Project Leader and Co-Pilot · PI Dr Ronald Rensink</p>
+      <div class="reads">
+        <div class="read read--b">
+          <p class="mono read__tag">Behavioural read</p>
+          <p>Psychophysics of how precisely and accurately people perceive correlation in scatterplots, using just-noticeable-difference discrimination and direct estimation. My own COGS 402 study tested whether those judgements hold up when mark shape and opacity change.</p>
+        </div>
+        <div class="read read--e">
+          <p class="mono read__tag">Impact read</p>
+          <p>Impact and ESG reporting assumes the reader takes the right relationship out of a chart. This work measures how far that holds when the design changes. It also gave me four years of running a research programme and then handing it over.</p>
+        </div>
+      </div>
+      <details class="detail"><summary>How it ran</summary>
+        <p>Experiments run on a locally hosted Node.js application, extending the lab's existing JavaScript codebase. Analysis in Excel using Spearman and Pearson correlation with sensitivity checks. I recruited, onboarded and trained each intake of Co-Pilots, and now advise the project rather than lead it.</p>
+      </details>
+    </article>
+
+    <article class="entry">
+      <p class="entry__meta mono muted"><span>Feb 2026</span><span>LSE Specialist Projects: Sustainability</span></p>
+      <h3>Scalability diligence for EWCPA</h3>
+      <p class="entry__org">Student consultant to a Kenya-based environmental NGO</p>
+      <div class="reads">
+        <div class="read read--b">
+          <p class="mono read__tag">Behavioural read</p>
+          <p>Worked out which parts of the programme depended on particular people and local knowledge, and which could be written down and repeated somewhere else.</p>
+        </div>
+        <div class="read read--e">
+          <p class="mono read__tag">Impact read</p>
+          <p>Sector analysis and scalability due diligence: mapped the operating landscape, tested the assumptions behind the growth case, and set out what would have to be true for the model to hold at a larger size and with external funding.</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="entry">
+      <p class="entry__meta mono muted"><span>2023 – 2025</span><span>Gaurav Impex, Mumbai</span></p>
+      <h3>Procurement and operations</h3>
+      <p class="entry__org">Silicone and rubber raw materials · distributor for DJ Silicone, plus EPDM and neoprene grades</p>
+      <div class="reads">
+        <div class="read read--b">
+          <p class="mono read__tag">Behavioural read</p>
+          <p>Rebuilt how the business talks to its customers: a Zoho CRM setup with a custom Trials module tracking material samples through to decision, and a branded email template system sent from the CRM. I still maintain both. Two years of watching what buyers respond to is a good corrective to lab findings.</p>
+        </div>
+        <div class="read read--e">
+          <p class="mono read__tag">Impact read</p>
+          <p>Two years inside a materials supply chain: sourcing, supplier terms, pricing and stock across silicone, EPDM and neoprene grades. Sustainability analysis of manufacturing inputs reads differently once you have done the procurement yourself and know where the costs sit.</p>
+        </div>
+      </div>
+    </article>
+
+    <p class="mono muted" style="margin-top:2rem">
+      <!-- EDIT: trim or extend -->
+      Earlier: International Project Coordinator, Good Luck Publishers (LATAM market entry) · tutor, The C.O.D.E. Initiative · content writer, TeenBook India
+    </p>
+  </section>
+
+  <!-- ===================== WRITING ===================== -->
+  <section class="section wrap" id="writing">
+    <div class="section__head"><span class="mono">04</span><h2>Writing</h2></div>
+    <div class="cards">
+      <!-- EDIT: replace href="#" with real PDF links once the files are uploaded -->
+      <a class="card" href="#">
+        <p class="mono muted">Dissertation · 2026</p>
+        <h3>Sustainability on the Move</h3>
+        <p>~10,000 words on pro-environmental practice under repeated relocation, and the model it produced.</p>
+        <span class="card__go mono">Read the PDF →</span>
+      </a>
+      <a class="card" href="#">
+        <p class="mono muted">Research report · 2023</p>
+        <h3>Shape, opacity and correlation perception</h3>
+        <p>My COGS 402 study: does the accuracy of a correlation judgement survive a change of visual encoding?</p>
+        <span class="card__go mono">Read the PDF →</span>
+      </a>
+      <a class="card" href="#">
+        <p class="mono muted">EDIT: add a third</p>
+        <h3>A short piece for non-specialists</h3>
+        <p>One page translating your research for someone with no background in it. Recruiters open this one first.</p>
+        <span class="card__go mono">Read the PDF →</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ===================== METHODS ===================== -->
+  <section class="section wrap">
+    <div class="section__head"><span class="mono">05</span><h2>Methods and tools</h2></div>
+    <div class="cols cols--3">
+      <div>
+        <p class="mono">Methods I have run</p>
+        <ul class="stack">
+          <li>Sequential mixed-methods design</li>
+          <li>Experimental and survey design</li>
+          <li>Psychophysics — JND discrimination, direct estimation</li>
+          <li>Reflexive thematic analysis</li>
+          <li>Spearman and Pearson correlation</li>
+          <li>McNemar exact tests</li>
+          <li>Sensitivity and robustness analysis</li>
+        </ul>
+      </div>
+      <div>
+        <p class="mono">Tools</p>
+        <ul class="stack">
+          <li>Advanced Excel <b>— regression, pivots, lookups</b></li>
+          <li>Qualtrics</li>
+          <li>SPSS</li>
+          <li>JavaScript <b>— experiment codebases</b></li>
+          <li>Zoho CRM, Freshsales</li>
+        </ul>
+        <p class="mono" style="margin-top:1.6rem">Languages</p>
+        <ul class="stack">
+          <li>English, Hindi, Marathi <b>— fluent</b></li>
+          <li>Spanish <b>— B1</b></li>
+        </ul>
+      </div>
+      <div>
+        <p class="mono">Education and credentials</p>
+        <ul class="stack">
+          <li>MSc Societal and Environmental Psychology, LSE <b>— 2026</b></li>
+          <li>BA Cognitive Systems (Cognition and Brain), UBC <b>— 2023</b></li>
+          <li>CFA Level 1 candidate <b>— sitting Feb 2027</b></li>
+          <li>Bloomberg Market Concepts; Finance Fundamentals</li>
+          <li>BCG Climate &amp; Sustainability simulation, Forage</li>
+          <li>Behavioural Insights for Public Policy</li>
+          <li>Foundations of Positive Psychology, UPenn</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section class="section wrap contact">
+    <div class="contact__grid">
+      <div>
+        <p class="mono muted">Currently</p>
+        <!-- EDIT: change this whenever your situation changes — it's the most-read line on the page -->
+        <h2>Looking for research and impact roles in London.</h2>
+      </div>
+      <div class="contact__links mono">
+        <!-- EDIT: all four -->
+        <a href="mailto:you@example.com">you@example.com</a>
+        <a href="https://linkedin.com/in/yourhandle">linkedin.com/in/yourhandle</a>
+        <a href="cv.pdf">Download CV (PDF)</a>
+        <a href="https://osf.io/">EDIT or delete: OSF / GitHub</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap footer__inner mono muted">
+    <!-- EDIT: keep, change or cut — it's the only informal line here, which is why it works -->
+    <span>Off the clock: badminton, banana bread, one hard thing a day.</span>
+    <span>Made by me · 2026</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var NS = 'http://www.w3.org/2000/svg';
+  var ptsG = document.getElementById('demoPts');
+  var slider = document.getElementById('guess');
+  var out = document.getElementById('guessOut');
+  var verdict = document.getElementById('verdict');
+  var checkBtn = document.getElementById('check');
+  var againBtn = document.getElementById('again');
+  if(!ptsG || !slider) return;
+
+  var trueR = 0, round = 1, errors = [], answered = false;
+
+  function gauss(){
+    var u = 0, v = 0;
+    while(u === 0) u = Math.random();
+    while(v === 0) v = Math.random();
+    return Math.sqrt(-2 * Math.log(u)) * Math.cos(2 * Math.PI * v);
+  }
+
+  function draw(){
+    trueR = 0.2 + Math.random() * 0.75;      // keep it in a range worth judging
+    if(trueR > 0.95) trueR = 0.95;
+    var n = 60, xs = [], ys = [];
+    for(var i = 0; i < n; i++){
+      var x = gauss(), z = gauss();
+      xs.push(x);
+      ys.push(trueR * x + Math.sqrt(1 - trueR * trueR) * z);
+    }
+    var pad = 9;
+    function scale(arr){
+      var lo = Math.min.apply(null, arr), hi = Math.max.apply(null, arr);
+      return arr.map(function(v){ return pad + (v - lo) / (hi - lo) * (100 - 2 * pad); });
+    }
+    var sx = scale(xs), sy = scale(ys);
+    while(ptsG.firstChild) ptsG.removeChild(ptsG.firstChild);
+    for(var j = 0; j < n; j++){
+      var c = document.createElementNS(NS, 'circle');
+      c.setAttribute('cx', sx[j].toFixed(2));
+      c.setAttribute('cy', (100 - sy[j]).toFixed(2));
+      c.setAttribute('r', 1.4);
+      c.setAttribute('class', 'demo__pt');
+      c.setAttribute('opacity', '0.75');
+      ptsG.appendChild(c);
+    }
+    answered = false;
+  }
+
+  function say(html){ verdict.innerHTML = html; }
+
+  function tally(){
+    if(!errors.length) return 'Round ' + round + ' — no guesses yet';
+    var mean = errors.reduce(function(a, b){ return a + b; }, 0) / errors.length;
+    return 'Round ' + round + ' · ' + errors.length + ' judged · average error ' + mean.toFixed(2);
+  }
+
+  slider.addEventListener('input', function(){
+    out.textContent = Number(slider.value).toFixed(2);
+  });
+
+  checkBtn.addEventListener('click', function(){
+    if(answered) return;
+    var guess = Number(slider.value);
+    var err = Math.abs(guess - trueR);
+    var signed = guess - trueR;
+    errors.push(err);
+    answered = true;
+    var line = signed < -0.05
+      ? 'You underestimated it. Almost everyone does: perceived correlation grows more slowly than the real thing.'
+      : signed > 0.05
+        ? 'You overestimated this one. That is less common, and usually means the cloud looked tighter than it was.'
+        : 'Close. Better than most first attempts.';
+    say('<p class="tally">' + tally() + '</p>' +
+        '<p><strong>The real value was ' + trueR.toFixed(2) + '.</strong> You said ' + guess.toFixed(2) + '.</p>' +
+        '<p class="muted">' + line + '</p>');
+  });
+
+  againBtn.addEventListener('click', function(){
+    round++;
+    draw();
+    say('<p class="tally">' + tally() + '</p><p class="muted">New plot. Commit to a number before you check.</p>');
+  });
+
+  draw();
+  out.textContent = Number(slider.value).toFixed(2);
+})();
+</script>
+</body>
+</html>
