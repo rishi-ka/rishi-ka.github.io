@@ -4,12 +4,6 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- ============================================================
-     Search for "TODO:" to find the spots that still need your
-     real content. There are five. None of them are visible on
-     the rendered page — they are comments only.
-     ============================================================ -->
-
 <title>Rishika Aggarwal — behavioural science &amp; impact</title>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23540B0E'/><text x='50' y='72' font-family='Georgia,serif' font-size='62' fill='%23FBF6E8' text-anchor='middle'>RA</text></svg>">
 <meta name="description" content="Psychology researcher trained in how people perceive and decide, with two years inside a business. I work on environmental behaviour — and on what survives contact with commercial reality.">
@@ -19,7 +13,7 @@
 <meta property="og:url" content="https://rishi-ka.github.io/">
 <meta property="og:title" content="Rishika Aggarwal — behavioural science &amp; impact">
 <meta property="og:description" content="Mixed-methods researcher and impact analyst. Psychophysics, sustainability strategy, and two years inside a supply chain. London.">
-<!-- TODO 1: make og.png — 1200×630, a screenshot of the scatterplot with your name on it -->
+<!-- og.png must sit in the repo root alongside this file -->
 <meta property="og:image" content="https://rishi-ka.github.io/og.png">
 <meta name="twitter:card" content="summary_large_image">
 
@@ -246,7 +240,7 @@ details.detail summary::after{content:" +";}
 details.detail[open] summary::after{content:" –";}
 details.detail p{margin:0.6rem 0 0.4rem;max-width:66ch;font-size:0.98rem;}
 
-/* ---------- writing ---------- */
+/* ---------- writing (section removed for now; rules kept for when it returns) ---------- */
 .cards{display:grid;gap:1px;background:var(--rule);border:1px solid var(--rule);}
 @media(min-width:760px){ .cards{grid-template-columns:repeat(auto-fit,minmax(14rem,1fr));} }
 .card{background:var(--paper);padding:1.4rem;display:flex;flex-direction:column;gap:0.6rem;text-decoration:none;transition:background .2s ease;}
@@ -429,7 +423,7 @@ footer{border-top:1px solid var(--rule);padding-block:1.6rem 2.6rem;}
         </div>
       </div>
       <details class="detail"><summary>What the shape and opacity study found</summary>
-        <p>Precision and accuracy tracked each other across all five opacity levels, as Fechner's assumption predicts: the discrimination and estimation offsets were statistically indistinguishable in every sub-condition, and the Weber slope varied by only 0.03 across them. Four of the five mark shapes behaved the same way. Crosses did not — there the two offsets came apart (p = 0.025), and the shape condition showed an effect the opacity condition did not (p = 0.013 against 0.27). So correlation perception is largely invariant to how you draw the marks, with one specific exception worth knowing about if you are designing a chart. Twenty participants analysed for opacity and nineteen for shape, from fifty-five recruited over two months.</p>
+        <p>Precision and accuracy tracked each other across all five opacity levels, as Fechner's assumption predicts: the discrimination and estimation offsets were statistically indistinguishable in every sub-condition, and the Weber slope varied by only 0.03 across them. Four of the five mark shapes behaved the same way. Crosses did not — there the two offsets came apart (p = 0.025), and the shape condition showed an effect the opacity condition did not (p = 0.013 against 0.27). So correlation perception is largely invariant to how you draw the marks, with one specific exception worth knowing about if you are designing a chart. Sixty-plus participants run over two months; 55 produced usable datasets across the two conditions, and 39 survived the exclusion criteria for the estimation task.</p>
       </details>
       <details class="detail"><summary>How it ran</summary>
         <p>Experiments run on a locally hosted Node.js application, extending the lab's existing JavaScript codebase. Analysis in Excel using Spearman and Pearson correlation with sensitivity checks. I recruited, onboarded and trained nine research assistants, mentored two students through independent projects, and ran three concurrent experimental conditions. I now advise the project rather than lead it.</p>
@@ -477,33 +471,12 @@ footer{border-top:1px solid var(--rule);padding-block:1.6rem 2.6rem;}
     <p class="mono muted" style="margin-top:2rem">
       Earlier: Tutor, The C.O.D.E. Initiative · Content Writer, TeenBook India
     </p>
-  </section>
-
-  <!-- ===================== WRITING ===================== -->
-  <section class="section wrap" id="writing">
-    <div class="section__head"><span class="mono">03</span><h2>Writing</h2></div>
-    <div class="cards">
-      <!-- TODO 5: upload shape-opacity-correlation.pdf to the repo root.
-           The dissertation card is deliberately not a link until results are out —
-           swap the <div> back to <a href="sustainability-on-the-move.pdf"> then. -->
-      <div class="card card--pending">
-        <p class="mono muted">Dissertation · 2026</p>
-        <h3>Sustainability on the Move</h3>
-        <p>9,977 words on pro-environmental practice under repeated relocation, and the dependency–horizon model it produced. The findings are summarised above.</p>
-        <span class="card__go mono">PDF after results · Sept 2026</span>
-      </div>
-      <a class="card" href="shape-opacity-correlation.pdf">
-        <p class="mono muted">Research report · 2023</p>
-        <h3>Shape, opacity and correlation perception</h3>
-        <p>My COGS 402 study: correlation judgements held across five opacity levels and four of five mark shapes. Crosses were the exception.</p>
-        <span class="card__go mono">Read the PDF →</span>
-      </a>
-    </div>
+    <p class="section__lede" style="margin:1.2rem 0 0">Full write-ups of the dissertation and the correlation study are available on request.</p>
   </section>
 
   <!-- ===================== METHODS ===================== -->
   <section class="section wrap">
-    <div class="section__head"><span class="mono">04</span><h2>Methods and tools</h2></div>
+    <div class="section__head"><span class="mono">03</span><h2>Methods and tools</h2></div>
     <div class="cols cols--3">
       <div>
         <p class="mono">Methods I have run</p>
