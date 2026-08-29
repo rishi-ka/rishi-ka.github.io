@@ -87,7 +87,9 @@ a{color:inherit;}
 #lens-e:focus-visible ~ header label[for="lens-e"]{outline:2px solid var(--accent);outline-offset:2px;}
 
 /* the header scatterplot re-encodes itself */
-#lens-b:checked ~ main .mark{rx:1.5;opacity:0.9;}
+#lens-b:checked ~ main .mark{opacity:0;}
+     .cog{fill:var(--accent);opacity:0;transition:opacity .5s ease, fill .35s ease;}
+#lens-b:checked ~ main .cog{opacity:0.9;}
 #lens-e:checked ~ main .mark{rx:0;opacity:0.45;}
 #lens-x:checked ~ main .plot__caption b{font-weight:400;}
 
@@ -261,6 +263,16 @@ footer{border-top:1px solid var(--rule);padding-block:1.6rem 2.6rem;}
 
       <figure style="margin:0">
         <svg class="plot" viewBox="0 0 100 100" role="img" aria-label="A scatterplot of thirty points with a fitted line. The marks change shape and opacity with the lens setting; the underlying relationship does not.">
+                    <defs>
+            <g id="cog">
+              <rect x="-0.4" y="-2.6" width="0.8" height="5.2"/>
+              <rect x="-0.4" y="-2.6" width="0.8" height="5.2" transform="rotate(45)"/>
+              <rect x="-0.4" y="-2.6" width="0.8" height="5.2" transform="rotate(90)"/>
+              <rect x="-0.4" y="-2.6" width="0.8" height="5.2" transform="rotate(135)"/>
+              <circle r="1.7"/>
+              <circle r="0.6" fill="var(--paper)"/>
+            </g>
+          </defs>
           <path class="plot__frame" d="M4 96 H96 M4 96 V4"/>
           <line class="plot__fit" x1="4" y1="85.1" x2="96" y2="18.9"/>
           <g>
@@ -294,6 +306,23 @@ footer{border-top:1px solid var(--rule);padding-block:1.6rem 2.6rem;}
             <rect class="mark" x="86.5" y="18.5" width="3" height="3"/>
             <rect class="mark" x="89.5" y="5.5"  width="3" height="3"/>
             <rect class="mark" x="92.5" y="27.5" width="3" height="3"/>
+          </g>
+                       <g>
+            <use class="cog" href="#cog" x="6" y="82"/><use class="cog" href="#cog" x="10" y="91"/>
+            <use class="cog" href="#cog" x="13" y="69"/><use class="cog" href="#cog" x="16" y="78"/>
+            <use class="cog" href="#cog" x="19" y="60"/><use class="cog" href="#cog" x="22" y="85"/>
+            <use class="cog" href="#cog" x="25" y="65"/><use class="cog" href="#cog" x="28" y="51"/>
+            <use class="cog" href="#cog" x="31" y="72"/><use class="cog" href="#cog" x="34" y="56"/>
+            <use class="cog" href="#cog" x="37" y="42"/><use class="cog" href="#cog" x="40" y="67"/>
+            <use class="cog" href="#cog" x="43" y="48"/><use class="cog" href="#cog" x="46" y="34"/>
+            <use class="cog" href="#cog" x="49" y="59"/><use class="cog" href="#cog" x="52" y="43"/>
+            <use class="cog" href="#cog" x="55" y="28"/><use class="cog" href="#cog" x="58" y="52"/>
+            <use class="cog" href="#cog" x="61" y="37"/><use class="cog" href="#cog" x="64" y="22"/>
+            <use class="cog" href="#cog" x="67" y="45"/><use class="cog" href="#cog" x="70" y="31"/>
+            <use class="cog" href="#cog" x="73" y="16"/><use class="cog" href="#cog" x="76" y="40"/>
+            <use class="cog" href="#cog" x="79" y="26"/><use class="cog" href="#cog" x="82" y="11"/>
+            <use class="cog" href="#cog" x="85" y="34"/><use class="cog" href="#cog" x="88" y="20"/>
+            <use class="cog" href="#cog" x="91" y="7"/><use class="cog" href="#cog" x="94" y="29"/>
           </g>
         </svg>
         <figcaption class="plot__caption mono muted">Same relationship · <b>three encodings</b></figcaption>
