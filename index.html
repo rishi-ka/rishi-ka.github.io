@@ -251,6 +251,9 @@ details.detail p{margin:0.6rem 0 0.4rem;max-width:66ch;font-size:0.98rem;}
 @media(min-width:760px){ .cards{grid-template-columns:repeat(auto-fit,minmax(14rem,1fr));} }
 .card{background:var(--paper);padding:1.4rem;display:flex;flex-direction:column;gap:0.6rem;text-decoration:none;transition:background .2s ease;}
 .card:hover{background:var(--paper-2);}
+.card--pending{cursor:default;}
+.card--pending:hover{background:var(--paper);}
+.card--pending .card__go{color:var(--muted);}
 .card h3{font-family:var(--display);font-weight:500;font-size:1.08rem;line-height:1.25;margin:0;}
 .card p{margin:0;font-size:0.95rem;color:var(--muted);}
 .card__go{margin-top:auto;color:var(--accent);transition:color .35s ease;}
@@ -395,13 +398,17 @@ footer{border-top:1px solid var(--rule);padding-block:1.6rem 2.6rem;}
       <div class="reads">
         <div class="read read--b">
           <p class="mono read__tag">Behavioural read</p>
-          <p>Sequential mixed-methods study of international postgraduates who had moved home more than three times in three years: 65 eligible survey responses screened from 181, then 12 interviews analysed with reflexive thematic analysis. Built on the habit discontinuity hypothesis, social practice theory and Installation Theory.</p>
+          <p>Sequential mixed-methods study of international postgraduates who had moved home more than three times in three years: 65 eligible survey responses screened from 181, then 12 interviews analysed with reflexive thematic analysis. Built on the habit discontinuity hypothesis, social practice theory and Installation Theory. There was no uniform erosion — practices moved in different directions, and how easy something was to do predicted whether it happened far better than how much the person cared did.</p>
         </div>
         <div class="read read--e">
           <p class="mono read__tag">Impact read</p>
-          <p>Explains why recycling, energy and food habits collapse in short-let and shared housing, even among people who care. Certainty about how long a home will last matters more than attitude does. That puts the problem with landlords, universities and housing providers, not with tenant education campaigns.</p>
+          <p>Explains why recycling, energy and food habits collapse in short-let and shared housing, even among people who care. What decides whether a practice survives a move is whether the new place makes it workable, and whether the resident can see far enough ahead to bother setting it up. That puts the problem with landlords, universities and housing providers, not with tenant education campaigns.</p>
         </div>
       </div>
+      <details class="detail"><summary>What the data showed</summary>
+        <p>Across seven practices there was no consistent direction of change. Sustainable transport rose from 64.6% to 98.5% and was the only result robust to every sensitivity check — though destination infrastructure is confounded with the move itself, which the text says plainly. Energy saving fell from 72.3% to 55.4% and food-waste reduction from 76.9% to 63.1%; neither survived both robustness checks, and I report them as such. Almost a third of people who had recycled at home had stopped.</p>
+        <p>Perceived ease correlated with frequency across all five separately measured practices (ρ = .46 to .67, every one at p &lt; .001). Environmental self-identity correlated with only two of them. Identity travels with the person; the arrangement decides whether the practice actually happens. The most common reason given for stopping was that the facilities were not there (52.4%), and just under a quarter said it was not worth it while the living situation was temporary.</p>
+      </details>
       <details class="detail"><summary>The contribution</summary>
         <p>A dependency–horizon model: a 2×2 separating how far a practice depends on its physical setting from how certain a person is about that setting lasting. Horizon security splits into duration certainty (how long do I have) and succession certainty (do I know what comes next), and the two behave differently.</p>
       </details>
@@ -414,17 +421,16 @@ footer{border-top:1px solid var(--rule);padding-block:1.6rem 2.6rem;}
       <div class="reads">
         <div class="read read--b">
           <p class="mono read__tag">Behavioural read</p>
-          <!-- TODO 2: add your COGS 402 result here. One sentence with a number in it.
-               Something like: "Accuracy held / shifted by X across shape conditions, but
-               opacity moved estimates by Y." Right now you pose the question twice and
-               never answer it — this is the single biggest content gap on the page. -->
-          <p>Psychophysics of how precisely and accurately people perceive correlation in scatterplots, using just-noticeable-difference discrimination and direct estimation, across 300+ participants and 18+ conditions. My own COGS 402 study — 60 participants — tested whether those judgements hold up when mark shape and opacity change.</p>
+          <p>Psychophysics of how precisely and accurately people perceive correlation in scatterplots, using just-noticeable-difference discrimination and direct estimation, across 300+ participants and 18+ conditions. My own COGS 402 study tested five opacity levels and five mark shapes. Correlation judgements survived every one of them except crosses.</p>
         </div>
         <div class="read read--e">
           <p class="mono read__tag">Impact read</p>
-          <p>Impact and ESG reporting assumes the reader takes the right relationship out of a chart. This work measures how far that holds when the design changes. Three years at the lab, two of them running the project, and then a handover.</p>
+          <p>Impact and ESG reporting assumes the reader takes the right relationship out of a chart. This work measures how far that holds when the design changes — mostly it does, which is the useful finding for anyone choosing chart styles. Three years at the lab, two of them running the project, and then a handover.</p>
         </div>
       </div>
+      <details class="detail"><summary>What the shape and opacity study found</summary>
+        <p>Precision and accuracy tracked each other across all five opacity levels, as Fechner's assumption predicts: the discrimination and estimation offsets were statistically indistinguishable in every sub-condition, and the Weber slope varied by only 0.03 across them. Four of the five mark shapes behaved the same way. Crosses did not — there the two offsets came apart (p = 0.025), and the shape condition showed an effect the opacity condition did not (p = 0.013 against 0.27). So correlation perception is largely invariant to how you draw the marks, with one specific exception worth knowing about if you are designing a chart. Twenty participants analysed for opacity and nineteen for shape, from fifty-five recruited over two months.</p>
+      </details>
       <details class="detail"><summary>How it ran</summary>
         <p>Experiments run on a locally hosted Node.js application, extending the lab's existing JavaScript codebase. Analysis in Excel using Spearman and Pearson correlation with sensitivity checks. I recruited, onboarded and trained nine research assistants, mentored two students through independent projects, and ran three concurrent experimental conditions. I now advise the project rather than lead it.</p>
       </details>
@@ -432,25 +438,21 @@ footer{border-top:1px solid var(--rule);padding-block:1.6rem 2.6rem;}
 
     <article class="entry">
       <p class="entry__meta mono muted"><span>Feb 2026</span><span>LSE Specialist Projects: Sustainability</span></p>
-      <h3>Scalability diligence for EWCPA</h3>
-      <p class="entry__org">Student consultant to a Kenya-based environmental NGO</p>
+      <h3>Funding strategy for EWCPA</h3>
+      <p class="entry__org">Student consultant, in an LSE team, to a Kenyan NGO working with imprisoned mothers and their children</p>
       <div class="reads">
         <div class="read read--b">
           <p class="mono read__tag">Behavioural read</p>
-          <p>Worked out which parts of the programme depended on particular people and local knowledge, and which could be written down and repeated somewhere else.</p>
+          <p>Worked out which parts of the programme depended on particular people and local knowledge, and which could be written down and repeated somewhere else. Then reframed how the organisation talks about itself — from listing activities to showing outcomes, which is what funders actually respond to.</p>
         </div>
         <div class="read read--e">
           <p class="mono read__tag">Impact read</p>
-          <p>An investment-readiness assessment: benchmarked EWCPA's impact model and governance structures against four peer organisations, then set out recommendations across blended finance readiness, outcome measurement and partnership strategy.</p>
+          <p>Benchmarked EWCPA against four peer organisations to find the niche it could defend, mapped a funding portfolio across institutional consortia, entry-level grants, diaspora sponsorship and faith-based donors, and built a three-tier impact scorecard so the organisation could report outcomes at the standard institutional funders expect.</p>
         </div>
       </div>
-      <!-- TODO 3 (narrowed): the three recommendation areas are now named above.
-           If you can say what you actually told them to do in one of those areas,
-           and whether they acted, uncomment this and fill it in.
       <details class="detail"><summary>What we recommended</summary>
-        <p>…</p>
+        <p>Stop competing with larger organisations on economic empowerment, and position instead as a specialist sub-grantee on the mother–child relationship — the one thing no peer in the sector centres. The diligence also turned up a live legal risk: Kenya's Public Benefit Organisations Act retired the old NGO category in 2024, which put eligibility for international funding in question until the organisation's status was confirmed. We sequenced the work so the nearest grant deadline came first and the evidence base needed for larger institutional funders was built behind it.</p>
       </details>
-      -->
     </article>
 
     <article class="entry">
@@ -481,18 +483,19 @@ footer{border-top:1px solid var(--rule);padding-block:1.6rem 2.6rem;}
   <section class="section wrap" id="writing">
     <div class="section__head"><span class="mono">03</span><h2>Writing</h2></div>
     <div class="cards">
-      <!-- TODO 5: upload these two PDFs to the repo root, or delete this whole section.
-           A Writing section where nothing opens is worse than no Writing section. -->
-      <a class="card" href="sustainability-on-the-move.pdf">
+      <!-- TODO 5: upload shape-opacity-correlation.pdf to the repo root.
+           The dissertation card is deliberately not a link until results are out —
+           swap the <div> back to <a href="sustainability-on-the-move.pdf"> then. -->
+      <div class="card card--pending">
         <p class="mono muted">Dissertation · 2026</p>
         <h3>Sustainability on the Move</h3>
-        <p>~10,000 words on pro-environmental practice under repeated relocation, and the model it produced.</p>
-        <span class="card__go mono">Read the PDF →</span>
-      </a>
+        <p>9,977 words on pro-environmental practice under repeated relocation, and the dependency–horizon model it produced. The findings are summarised above.</p>
+        <span class="card__go mono">PDF after results · Sept 2026</span>
+      </div>
       <a class="card" href="shape-opacity-correlation.pdf">
         <p class="mono muted">Research report · 2023</p>
         <h3>Shape, opacity and correlation perception</h3>
-        <p>My COGS 402 study: does the accuracy of a correlation judgement survive a change of visual encoding?</p>
+        <p>My COGS 402 study: correlation judgements held across five opacity levels and four of five mark shapes. Crosses were the exception.</p>
         <span class="card__go mono">Read the PDF →</span>
       </a>
     </div>
