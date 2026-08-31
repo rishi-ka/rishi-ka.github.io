@@ -159,7 +159,6 @@ a{color:inherit;}
 .plot__frame{stroke:var(--rule);stroke-width:0.35;fill:none;}
 .plot__fit{stroke:var(--accent);stroke-width:0.7;opacity:0.55;transition:stroke .35s ease;}
 .mark{fill:var(--accent);rx:1.5;opacity:0.7;transition:opacity .5s ease, rx .5s ease, fill .35s ease;}
-.hero__fig{margin:0;}
 .letter{
   font-family:var(--display);font-weight:700;font-size:5.6px;
   text-anchor:middle;dominant-baseline:central;
@@ -351,12 +350,12 @@ footer{border-top:1px solid var(--rule);padding-block:1.6rem 2.6rem;}
         <p class="plot__note mono muted">Fifteen letters, one relationship. Drag it down and my name stops being readable — the letters never moved sideways.</p>
       </figure>
 
-      <p class="hero__links mono">
+      <nav class="hero__links mono" aria-label="Quick links">
         <a href="#demo">Try the experiment</a>
         <a href="mailto:rishikaaggarwal2@gmail.com">Email</a>
         <a href="https://linkedin.com/in/rishika-aggarwal/">LinkedIn</a>
         <a href="cv.pdf">CV (PDF)</a>
-      </p>
+      </nav>
     </div>
   </section>
 
@@ -703,7 +702,7 @@ footer{border-top:1px solid var(--rule);padding-block:1.6rem 2.6rem;}
     var sx = scale(xs), sy = scale(ys);
     shownR = pearson(sx, sy);
 
-    while(ptsG.firstChild) ptsG.removeChild(ptsG.firstChild);
+    ptsG.replaceChildren();
     for(var j = 0; j < n; j++){
       var c = document.createElementNS(NS, 'circle');
       c.setAttribute('cx', sx[j].toFixed(2));
